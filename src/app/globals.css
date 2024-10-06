@@ -2,34 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
- body{
-  overflow: hidden;
- }
+  body {
+    overflow: hidden;
+    font-family: "Yekan", sans-serif;
+  }
+}
+@font-face {
+  font-family: "Yekan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/YekanBakh_Pro/Yekan Bakh FaNum/TTF/YekanBakhFaNum-Black.ttf")
+      format("ttf"),
+    url("/fonts/YekanBakh_Pro/Yekan Bakh FaNum/OTF/YekanBakhFaNum-Black.otf")
+      format("otf");
+}
+
+.text-custom-font {
+  font-family: "Yekan", sans-serif;
+  font-weight: 400;
 }
 
 @layer components {
-
-  .navbar-link:hover{
-    color:rgb(5, 175, 5) ;
-    transition: all 0.4s;
+  .navbar-link {
+    cursor: pointer; /* به عنصر اشاره‌گر را به حالت دستی تغییر می‌دهد */
+    transition: color 0.3s;
+    color: #000;
   }
-  .navbar-link::after{
-    position: absolute;
-    content: "";
-    background-color:rgb(5, 175, 5);
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    scale: 0;
-    transform-origin: left;
-    transition: all 0.4s;
+  .navbar-link::after {
+    color: #00bf6f !important;
   }
-  .navbar-link:hover::after{
-    scale: 1;
 
+  .sumitDWN1 {
+    background-image: linear-gradient(
+      268deg,
+      rgb(25, 177, 106) 0%,
+      rgb(43, 140, 81) 100%
+    );
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    width: 240px;
+    height: 52px;
+  }
+  .sumitDWN2 {
+    background-color: #f9fbf9;
+    border: 1px solid #000000db;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    width: 240px;
+    height: 52px;
+  }
+  .sumitDWN3 {
+    background-color: #f9fafb;
+    border: 1px solid #00d47bdb;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+    justify-content: center;
+    width: 240px;
+    height: 52px;
+  }
+  .leftside {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    right: 120px;
+  }
+  .rightside {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 45px;
+  }
+  .rightside2 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: -120px;
+  }
+  .rightside3 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: -120px;
+  }
+  .rightside {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    left: 170px;
+  }
+  .rightside4 {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: -130px;
+  }
+  .rightside5 {
+    margin-right: -190px;
+  }
+  .cursorAll {
+    cursor: pointer;
   }
 }
