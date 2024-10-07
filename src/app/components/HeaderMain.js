@@ -49,7 +49,7 @@ function HeaderMain() {
           </div>
 
           <div
-            className="bg-gray-100 border border-teal-400 p-4 rounded-lg shadow-md mb-4 cursor-pointer relative flex justify-center"
+            className="bg-white border border-teal-400 p-4 rounded-lg shadow-md mb-4 cursor-pointer relative flex justify-center"
             style={{ width: "240px", height: "52px" }}
           >
             <div style={{ color: "#00bf6f" }} className="w-fit">
