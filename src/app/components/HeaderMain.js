@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Column, ShowImage } from "./Functions";
 import { ImageLink, LinkTexts } from "./Datas";
 function HeaderMain() {
