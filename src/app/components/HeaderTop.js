@@ -25,10 +25,7 @@ export default function Home() {
           به عنوان بزرگترین مرکز خرید آنلاین ایرانی در حوزه های مختلف شناخته
           می‌شود.
         </p>
-        <a
-          className="mb-4 text-right cursor-pointer"
-          style={{ color: "#00bf6f" }}
-        >
+        <a className="mb-4 text-right cursor-pointer"style={{ color: "#00bf6f" }}>
           بیشتر بخوانید
         </a>
       </div>
@@ -37,30 +34,10 @@ export default function Home() {
         className="flex justify-center items-center"
         style={{ marginRight: "190px" }}
       >
-        <ShowImage
-          alt={"logo1"}
-          itemLinks={ImageLink.logo1}
-          widths={92}
-          heights={92}
-        />
-        <ShowImage
-          alt={"logo2"}
-          itemLinks={ImageLink.logo2}
-          widths={92}
-          heights={92}
-        />
-        <ShowImage
-          alt={"logo3"}
-          itemLinks={ImageLink.logo3}
-          widths={92}
-          heights={92}
-        />
-        <ShowImage
-          alt={"logo4"}
-          itemLinks={ImageLink.logo4}
-          widths={92}
-          heights={92}
-        />
+        <ShowImage alt={"logo1"} itemLinks={ImageLink.logo1} widths={92} heights={92}/>
+        <ShowImage alt={"logo2"} itemLinks={ImageLink.logo2} widths={92} heights={92}/>
+        <ShowImage alt={"logo3"} itemLinks={ImageLink.logo3} widths={92} heights={92}/>
+        <ShowImage alt={"logo4"} itemLinks={ImageLink.logo4} widths={92} heights={92}/>
       </div>
     </div>
   );

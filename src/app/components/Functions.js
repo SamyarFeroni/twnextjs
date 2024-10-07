@@ -3,10 +3,7 @@ const Column = ({ title, items }) => (
   <div className="flex flex-col" dir="rtl">
     <h3 className="font-semibold mb-7 text-gray-300">{title}</h3>
     {items.map((item, index) => (
-      <div
-        key={index}
-        className="hover-color relative cursor-pointer mb-4 text-xs w-fit "
-      >
+      <div key={index} className="hover-color relative cursor-pointer mb-4 text-xs w-fit ">
         {item}
       </div>
     ))}
