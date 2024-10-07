@@ -7,11 +7,12 @@ export default function Home() {
       <Head>
         <title className="text-gray-300">مرکز خرید آنلاین بانی مد</title>
       </Head>
+      {/* texts from the botton of page */}
       <div className="container mx-auto p-6">
         <h1 className="text-3xl font-bold text-gray-300 mb-4 text-right text-base">
           مرکز خرید آنلاین پوشاک بانی مد
         </h1>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-2 text-right text-3xl">
+        <h2 className="text-2xl9 font-semibold text-gray-800 mb-2 text-right text-3xl">
           مرکز خرید آنلاین بانی مد
         </h2>
         <p className="text-gray-400 mb-4 text-right">
@@ -19,35 +20,45 @@ export default function Home() {
           به عنوان بزرگترین مرکز خرید آنلاین ایرانی در حوزه های مختلف شناخته
           می‌شود.
         </p>
-        <a className="mb-4 text-right cursor-pointer" style={{ color: "#00bf6f" }}>
+        <a
+          className="mb-4 text-right cursor-pointer"
+          style={{ color: "#00bf6f" }}
+        >
           بیشتر بخوانید
         </a>
       </div>
-      
 
-      <div className="flex justify-center items-center" style={{ marginRight: "190px" }}>
-        <Image className="mx-2"  
-          src="https://www.banimode.com//themes/new/assets/images/footer/samandehi.png@2x.png"  
-          width={92}  
-          height={92} 
+      {/* Logos of the componyes */}
+      <div
+        className="flex justify-center items-center"
+        style={{ marginRight: "190px" }}
+      >
+        <Image
+          className="mx-2"
+          src="https://www.banimode.com//themes/new/assets/images/footer/samandehi.png@2x.png"
+          width={92}
+          height={92}
           alt="Logo 1"
         />
-        <Image className="mx-2" 
-          src="https://www.banimode.com//themes/new/assets/images/footer/logo-itehad@2x.png"  
-          width={92} 
-          height={92} 
+        <Image
+          className="mx-2"
+          src="https://www.banimode.com//themes/new/assets/images/footer/logo-itehad@2x.png"
+          width={92}
+          height={92}
           alt="Logo 2"
         />
-        <Image className="mx-2" 
-          src="https://www.banimode.com/assets/img/enamad.png"  
-          width={92} 
-          height={92} 
+        <Image
+          className="mx-2"
+          src="https://www.banimode.com/assets/img/enamad.png"
+          width={92}
+          height={92}
           alt="Logo 3"
         />
-        <Image className="mx-2" 
-          src="https://www.banimode.com/assets/img/enamad.png"  
-          width={92} 
-          height={92} 
+        <Image
+          className="mx-2"
+          src="https://www.banimode.com/assets/img/enamad.png"
+          width={92}
+          height={92}
           alt="Logo 3"
         />
       </div>
