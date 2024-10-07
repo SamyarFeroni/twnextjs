@@ -148,4 +148,4 @@ function HeaderMain() {
   );
 }
 export default HeaderMain;
-export { ShowImage };
+
