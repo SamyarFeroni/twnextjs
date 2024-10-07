@@ -9,6 +9,9 @@ const Column = ({ title, items }) => (
     ))}
   </div>
 );
+
+
+
 const ShowImage = ({ alt, itemLinks, widths, heights }) => (
   <div>
     {itemLinks.map((link, index) => (
