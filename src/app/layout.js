@@ -1,6 +1,7 @@
 import "./globals.css";
 import HeaderTop from "./components/HeaderTop";
 import HeaderMain from "./components/HeaderMain";
+import MailInput from "./components/MailInput"
 
 export const metadata = {
   title: "Create Next App",
@@ -10,7 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="text-custom-font">
+      <body className="container text-custom-font">
+        <MailInput/>
         <HeaderMain />
         <HeaderTop />
         {children}

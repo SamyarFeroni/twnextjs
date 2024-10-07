@@ -1,96 +1,44 @@
 import React from "react";
 import Image from "next/image";
-
+import {Column,Column2} from "./Functions"
+import { ImageLink,LinkTexts } from "./Datas";
 function HeaderMain() {
   return (
-    <div className="flex-center flex-col  p-5">
+    <div className="flex text-right relative mr-11 items-center flex-col  p-5" style={{ left: '160px' }}>
       <div className="grid grid-cols-5 gap-4 w-full max-w-6xl mb-10">
-
+        
         {/* The first column on left side */}
-        <div className="leftside">
+        <div className="flex flex-col text-left relative" style={{ right: '170px' }}>
           <div className="mb-14 text-right">
-            <Image
-              src="https://www.banimode.com//themes/new/assets/images/footer/footer-logo.svg"
-              alt="Banimode Logo"
-              width={306}
-              height={60}
-            />
+            <Column2 alt={"Banimode Logo"} itemLinks={ImageLink.BanimodeLogo} widths={360} heights={60} />
           </div>
-
-          <div className="sumitDWN1 flex-center ">
-            <Image
-              src="https://www.banimode.com//themes/new/assets/images/icon/bazaar-logo.svg"
-              alt="Bazaar Logo"
-              width={50}
-              height={60}
-            />
+          <div className="bg-gradient-to-l from-green-500 to-green-700 p-4 rounded-lg shadow-md mb-4 cursor-pointer relative flex justify-center" style={{ width: '240px', height: '52px' }}>
+            <Column2 alt={"Bazar Logo"} itemLinks={ImageLink.BazarLogo} widths={50} heights={60} />
             <div className="text-white w-fit ml-2">دریافت اپلیکیشن از</div>
           </div>
 
-          <div className="sumitDWN2 flex-center">
-            <Image
-              src="https://www.banimode.com//themes/new/assets/images/icon/sib-app.png"
-              alt="sibapp Logo"
-              width={56}
-              height={60}
-            />
+          <div className="bg-gray-50 border border-black p-4 rounded-lg shadow-md mb-4 cursor-pointer relative flex justify-center" style={{ width: '240px', height: '52px' }}>
+            <Column2 alt={"sibapp Logo"} itemLinks={ImageLink.sibappLogo} widths={56} heights={60} />
             <div className="text-gray-950 ml-2 w-fit">دریافت اپلیکیشن از</div>
           </div>
 
-          <div className="sumitDWN3 flex-center">
+          <div className="bg-gray-100 border border-teal-400 p-4 rounded-lg shadow-md mb-4 cursor-pointer relative flex justify-center" style={{ width: '240px', height: '52px' }}>
             <div style={{ color: "#00bf6f" }} className="w-fit">
               دانلود اپلیکیشن
             </div>
-            <Image
-              src="https://www.banimode.com//themes/new/assets/images/app-download.svg"
-              alt="dwn"
-              height={24}
-              width={24}
-            />
+            <Column2 alt={"DWN Logo"} itemLinks={ImageLink.DWNLogo} heights={24} widths={24}/>
           </div>
 
           <div className="flex justify-between mt-4">
-            <div>
-              <Image
-                className="icon"
-                src="https://www.banimode.com//themes/new/assets/images/footer-twitter.svg"
-                alt="twitter"
-                width={20}
-                height={20}
-              />
-            </div>
-            <div>
-              <Image
-                className="icon"
-                src="https://www.banimode.com//themes/new/assets/images/footer-aparat.svg"
-                alt="aparat"
-                width={20}
-                height={20}
-              />
-            </div>
-            <div>
-              <Image
-                className="icon"
-                src="https://www.banimode.com//themes/new/assets/images/footer-telegram.svg"
-                alt="telegram"
-                width={20}
-                height={20}
-              />
-            </div>
-            <div>
-              <Image
-                className="icon"
-                src="https://www.banimode.com//themes/new/assets/images/footer-insta.svg"
-                alt="instagram"
-                width={20}
-                height={20}
-              />
-            </div>
+            <Column2 alt="twitter" itemLinks={ImageLink.twitter}  widths={20} heights={20}/>
+            <Column2 alt="aparat" itemLinks={ImageLink.aparat} widths={20} heights={20} />
+            <Column2 alt="telegram" itemLinks={ImageLink.telegram}widths={20} heights={20} />
+            <Column2 alt="instagram" itemLinks={ImageLink.instagram} widths={20} heights={20}/>
           </div>
         </div>
 
         {/* The secend column on left side */}
-        <div className="rightside4" dir="rtl">
+        <div className="flex flex-col text-right ml-2" dir="rtl">
           <h3 className="font-semibold mb-3 text-gray-300">
             منتظر شنیدن صدای گرمتیم
             <div className="text-gray-300 text-[10px] mt-3 mb-3">
@@ -107,7 +55,7 @@ function HeaderMain() {
             <a className="hover-colorNEW cursor-pointer w-fit">10001654</a>
           </div>
 
-          <div className="flex-center mb-7 text-sm">
+          <div className="flex items-center mb-7 text-sm">
             <span className="text-gray-400 mr-2">ایمیل: </span>
             <a
               href="mailto:customer@banimode.com"
@@ -118,57 +66,22 @@ function HeaderMain() {
           </div>
 
           <div>
-            <Image
-              src="https://www.banimode.com/themes/new/assets/images/footer/banimag-logo.svg"
-              alt="bani mag"
-              height={150}
-              width={150}
-            />
+            <Column2 alt={"Bani Mag"} itemLinks={ImageLink.BaniMag} heights={150} widths={150}/>
           </div>
         </div>
 
         {/* The Third column on left side  */}
-        <div className="rightside3" dir="rtl">
-          <h3 className="font-semibold mb-7 text-gray-300">اطلاعات بانی مد</h3>
-          <div className="hover-color relative-cursor">درباره ما</div>
-          <div className="hover-color relative-cursor">قوانین و مقررات</div>
-          <div className="hover-color relative-cursor">تماس با ما</div>
-          <div className="hover-color relative-cursor">فرصت های شغلی</div>
-          <div className="hover-color relative-cursor">همکاری تجاری</div>
-        </div>
+        <Column title={"اطلاعات بانی مد"} items={LinkTexts.BanimodeInformation}/>
 
         {/* The secend column on right side */}
-        <div className="rightside2" dir="rtl">
-          <h3 className="font-semibold mb-7 text-gray-300">خدمات مشتریان</h3>
-          <div className="hover-color relative-cursor">پرسش های متداول</div>
-          <div className="hover-color relative-cursor">شرایط بازگشت</div>
-          <div className="hover-color relative-cursor">راهنمای خرید</div>
-          <div className="hover-color relative-cursor">B2B فروش</div>
-        </div>
+        <Column title={"خدمات مشتریان"} items={LinkTexts.CustomerService}/>
 
         {/* The First column on right side  */}
-        <div className="rightside" dir="rtl">
-          <h3 className="font-semibold mb-7 text-gray-300 w-fit">
-            خرید از بانی مد
-          </h3>
-          <div className="hover-color relative-cursor">لباس مردانه</div>
-          <div className="hover-color relative-cursor">
-            خرید لباس زنانه برند
-          </div>
-          <div className="hover-color relative-cursor">خرید کیف و کفش برند</div>
-          <div className="hover-color relative-cursor">
-            خرید محصولات آرایشی اصلی
-          </div>
-          <div className="hover-color relative-cursor">
-            خرید طلا و ساعت اورجینال
-          </div>
-          <div className="hover-color relative-cursor">
-            خرید لوازم خانه با کیفیت
-          </div>
-        </div>
+        <Column title={"خرید از بانی مد"} items={LinkTexts.BuyingFromBanimode}/>
       </div>
     </div>
   );
 }
-
 export default HeaderMain;
+export {Column2}
+

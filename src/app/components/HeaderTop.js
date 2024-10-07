@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-
+import { ImageLink } from "./Datas";
+import { Column2 } from "./Functions";
 export default function Home() {
   return (
-    <div className="rightside5 bg-slate-50 min-h-screen" dir="rtl">
+    <div className="relative bg-slate-50 min-h-screen" dir="rtl" style={{ marginRight: '-190px' }}>
       <Head>
         <title className="text-gray-300">مرکز خرید آنلاین بانی مد</title>
       </Head>
@@ -27,40 +28,12 @@ export default function Home() {
           بیشتر بخوانید
         </a>
       </div>
-
       {/* Logos of the componyes */}
-      <div
-        className="flex justify-center items-center"
-        style={{ marginRight: "190px" }}
-      >
-        <Image
-          className="mx-2 cursorAll"
-          src="https://www.banimode.com//themes/new/assets/images/footer/samandehi.png@2x.png"
-          width={92}
-          height={92}
-          alt="Logo 1"
-        />
-        <Image
-          className="mx-2 cursorAll"
-          src="https://www.banimode.com//themes/new/assets/images/footer/logo-itehad@2x.png"
-          width={92}
-          height={92}
-          alt="Logo 2 cursorAll"
-        />
-        <Image
-          className="mx-2 cursorAll"
-          src="https://www.banimode.com/assets/img/enamad.png"
-          width={92}
-          height={92}
-          alt="Logo 3"
-        />
-        <Image
-          className="mx-2 cursorAll"
-          src="https://www.banimode.com/assets/img/enamad.png"
-          width={92}
-          height={92}
-          alt="Logo 3"
-        />
+      <div className="flex justify-center items-center" style={{ marginRight: "190px" }}>
+        <Column2 alt={"logo1"} itemLinks={ImageLink.logo1} widths={92} heights={92} />
+        <Column2 alt={"logo2"} itemLinks={ImageLink.logo2} widths={92} heights={92} />
+        <Column2 alt={"logo3"} itemLinks={ImageLink.logo3} widths={92} heights={92} />
+        <Column2 alt={"logo4"} itemLinks={ImageLink.logo4} widths={92} heights={92} /> 
       </div>
     </div>
   );
