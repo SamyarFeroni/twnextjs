@@ -1,10 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import { ImageLink } from "./Datas";
-import { Column2 } from "./Functions";
+import { ShowImage } from "./Functions";
 export default function Home() {
   return (
-    <div className="relative bg-slate-50 min-h-screen" dir="rtl" style={{ marginRight: '-190px' }}>
+    <div
+      className="relative bg-slate-50 min-h-screen"
+      dir="rtl"
+      style={{ marginRight: "-190px" }}
+    >
       <Head>
         <title className="text-gray-300">مرکز خرید آنلاین بانی مد</title>
       </Head>
@@ -29,11 +33,34 @@ export default function Home() {
         </a>
       </div>
       {/* Logos of the componyes */}
-      <div className="flex justify-center items-center" style={{ marginRight: "190px" }}>
-        <Column2 alt={"logo1"} itemLinks={ImageLink.logo1} widths={92} heights={92} />
-        <Column2 alt={"logo2"} itemLinks={ImageLink.logo2} widths={92} heights={92} />
-        <Column2 alt={"logo3"} itemLinks={ImageLink.logo3} widths={92} heights={92} />
-        <Column2 alt={"logo4"} itemLinks={ImageLink.logo4} widths={92} heights={92} /> 
+      <div
+        className="flex justify-center items-center"
+        style={{ marginRight: "190px" }}
+      >
+        <ShowImage
+          alt={"logo1"}
+          itemLinks={ImageLink.logo1}
+          widths={92}
+          heights={92}
+        />
+        <ShowImage
+          alt={"logo2"}
+          itemLinks={ImageLink.logo2}
+          widths={92}
+          heights={92}
+        />
+        <ShowImage
+          alt={"logo3"}
+          itemLinks={ImageLink.logo3}
+          widths={92}
+          heights={92}
+        />
+        <ShowImage
+          alt={"logo4"}
+          itemLinks={ImageLink.logo4}
+          widths={92}
+          heights={92}
+        />
       </div>
     </div>
   );
