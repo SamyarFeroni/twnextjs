@@ -5,6 +5,7 @@ function HeaderMain() {
   return (
     <div className="flex flex-col items-center p-5">
       <div className="grid grid-cols-5 gap-4 w-full max-w-6xl mb-10">
+        
         {/* The first column on left side */}
         <div className="leftside">
           <div className="mb-14 text-right">
