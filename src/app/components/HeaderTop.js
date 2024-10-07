@@ -34,28 +34,28 @@ export default function Home() {
         style={{ marginRight: "190px" }}
       >
         <Image
-          className="mx-2"
+          className="mx-2 cursorAll"
           src="https://www.banimode.com//themes/new/assets/images/footer/samandehi.png@2x.png"
           width={92}
           height={92}
           alt="Logo 1"
         />
         <Image
-          className="mx-2"
+          className="mx-2 cursorAll"
           src="https://www.banimode.com//themes/new/assets/images/footer/logo-itehad@2x.png"
           width={92}
           height={92}
-          alt="Logo 2"
+          alt="Logo 2 cursorAll"
         />
         <Image
-          className="mx-2"
+          className="mx-2 cursorAll"
           src="https://www.banimode.com/assets/img/enamad.png"
           width={92}
           height={92}
           alt="Logo 3"
         />
         <Image
-          className="mx-2"
+          className="mx-2 cursorAll"
           src="https://www.banimode.com/assets/img/enamad.png"
           width={92}
           height={92}
