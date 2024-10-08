@@ -57,6 +57,7 @@ const ImageLink = {
   ],
   logo3: ["https://www.banimode.com/assets/img/enamad.png"],
   logo4: ["https://www.banimode.com/assets/img/enamad.png"],
+  MailLogo:["https://www.banimode.com/themes/new/assets/images/newsletter.svg"]
 };
 
 export { LinkTexts, ImageLink };

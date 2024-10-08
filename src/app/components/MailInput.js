@@ -1,20 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import {ShowImage} from "./Functions"
+import { ImageLink } from "./Datas";
 
 function MailInput() {
   return (
     <div clssName="">
       <div>
-
         <div>
-          <Image
-            src="https://www.banimode.com/themes/new/assets/images/newsletter.svg"
-            alt="mail logo"
-            width={300}
-            height={300}
-          />
+          <ShowImage alt={"Mail Logo"} itemLinks={ImageLink.MailLogo} widths={300} heights={300}  />
         </div>
-
         <div></div>
         <div></div>
         <div></div>
