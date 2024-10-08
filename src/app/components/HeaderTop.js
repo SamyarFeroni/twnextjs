@@ -2,12 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import { ImageLink } from "./Datas";
 import { ShowImage } from "./Functions";
+
 export default function Home() {
   return (
     <div
       className="relative bg-slate-50 min-h-screen"
       dir="rtl"
-      style={{ marginRight: "-10px" }}
+      style={{ marginRight: "-10px"  }}
     >
       <Head>
         <title className="text-gray-300">مرکز خرید آنلاین بانی مد</title>

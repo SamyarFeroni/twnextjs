@@ -2,6 +2,7 @@ import React from "react";
 import { Column, ShowImage } from "./Functions";
 import { ImageLink, LinkTexts } from "./Datas";
 import components from "../components.module.css";
+
 function HeaderMain() {
   return (
     <div

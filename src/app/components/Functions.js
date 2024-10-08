@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "../globals.css"
 import components from "../components.module.css"
+
 const Column = ({ title, items }) => (
   <div className="flex flex-col" dir="rtl">
     <h3 className="font-semibold mb-7 text-gray-300">{title}</h3>
