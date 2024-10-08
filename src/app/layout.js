@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="container text-custom-font">
+      <body className="overflow-y-auto text-custom-font">
         <MailInput/>
         <HeaderMain />
         <HeaderTop />

@@ -7,13 +7,13 @@ export default function Home() {
     <div
       className="relative bg-slate-50 min-h-screen"
       dir="rtl"
-      style={{ marginRight: "-190px" }}
+      style={{ marginRight: "-10px" }}
     >
       <Head>
         <title className="text-gray-300">مرکز خرید آنلاین بانی مد</title>
       </Head>
       {/* texts from the botton of page */}
-      <div className="container mx-auto p-6">
+      <div className="overflow-y-auto mx-auto p-6">
         <h1 className="text-3xl font-bold text-gray-300 mb-4 text-right text-base">
           مرکز خرید آنلاین پوشاک بانی مد
         </h1>
@@ -32,7 +32,7 @@ export default function Home() {
       {/* Logos of the componyes */}
       <div
         className="flex justify-center items-center"
-        style={{ marginRight: "190px" }}
+        style={{ marginRight: "110px" }}
       >
         <ShowImage alt={"logo1"} itemLinks={ImageLink.logo1} widths={92} heights={92}/>
         <ShowImage alt={"logo2"} itemLinks={ImageLink.logo2} widths={92} heights={92}/>

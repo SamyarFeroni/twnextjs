@@ -1,0 +1,24 @@
+.HoverColor {
+  @apply relative cursor-pointer mb-4 text-xs w-fit transition-colors duration-200;
+}
+
+.HoverColor:hover {
+  @apply text-[#00bf6f];
+}
+
+.HoverColor::after {
+  content: "";
+  @apply absolute left-1/2 bottom-[-2px] w-0 h-[1px] bg-[#00bf6f] transition-all duration-200 ease-in-out;
+}
+
+.HoverColor:hover::after {
+  @apply w-full left-0;
+}
+
+.icon {
+  @apply transition-colors duration-200 relative cursor-pointer;
+}
+
+.icon:hover {
+  @apply hover:filter-none text-[#00bf6f];
+}

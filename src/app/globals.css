@@ -8,60 +8,11 @@
     font-family: "Yekan", sans-serif;
   }
 }
+
 @font-face {
   font-family: Yekan;
   font-style: normal;
   font-weight: 100;
   src: url("./public/fonts/YekanBakhFaNum-Thin.woff") format("woff"),
-    url("./public/fonts/YekanBakhFaNum-Thin.woff") format("woff2");
-}
-
-@layer components {
-    .hover-color {
-      position: relative;
-      transition: color 0.2s;
-    }
-    .container {
-      height: -11vh; 
-      overflow-y: auto; 
-    }
-
-    .hover-color:hover {
-      color: #00bf6f;
-    }
-
-    .hover-color::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -2px;
-      width: 0;
-      height: 1px;
-      background-color: #00bf6f;
-      transition: width 0.2s ease, left 0.2s ease;
-    }
-
-    .hover-color:hover::after {
-      width: 100%;
-      left: 0;
-    }
-    .hover-colorNEW {
-      position: relative;
-      transition: color 0.2s;
-    }
-
-    .hover-colorNEW:hover {
-      color: #00bf6f;
-    }
-  
-
-  .icon {
-    cursor: pointer;
-    position: relative;
-    transition: color 0.2s;
-  }
-  .icon:hover {
-    filter: none;
-    color: #00bf6f;
-  }
+       url("./public/fonts/YekanBakhFaNum-Thin.woff") format("woff2");
 }
