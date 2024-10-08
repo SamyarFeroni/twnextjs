@@ -1,6 +1,7 @@
 import React from "react";
 import { Column, ShowImage } from "./Functions";
 import { ImageLink, LinkTexts } from "./Datas";
+import components from "../components.module.css";
 function HeaderMain() {
   return (
     <div
@@ -101,18 +102,18 @@ function HeaderMain() {
 
           <div className="mb-7 text-sm">
             <span className="text-gray-400">تلفن:</span>
-            <a className="Hrelative transition-colors duration-200 hover:text-[#00bf6f] cursor-pointer mb-4 text-xs w-fit">021-49215</a>
+            <a className={components.hoverColorText}>021-49215</a>
           </div>
           <div className="mb-7 text-sm">
             <span className="text-gray-400">پیامک:</span>
-            <a className="Hrelative transition-colors duration-200 hover:text-[#00bf6f] cursor-pointer mb-4 text-xs w-fit">10001654</a>
+            <a className={components.hoverColorText}>10001654</a>
           </div>
 
-          <div className="flex items-center mb-7 text-sm">
-            <span className="text-gray-400 mr-2">ایمیل: </span>
+          <div className=" mb-7 text-sm">
+            <span className="text-gray-400 mr-2">ایمیل:</span>
             <a
               href="mailto:customer@banimode.com"
-              className="relative transition-colors duration-200 hover:text-[#00bf6f] cursor-pointer mb-4 text-xs w-fit"
+              className={components.hoverColorText}
             >
               customer@banimode.com
             </a>
